@@ -6,8 +6,8 @@ import net.ukr.dreamsicle.trip.Trip;
 import java.io.IOException;
 import java.util.List;
 
-import static net.ukr.dreamsicle.io.TripIOUtils.readTripsFromFile;
-import static net.ukr.dreamsicle.io.TripIOUtils.writeTripsIntoBinFile;
+import static net.ukr.dreamsicle.io.TripIO.readTripsFromFile;
+import static net.ukr.dreamsicle.io.TripIO.writeTripsIntoBinFile;
 
 /**
  * Created by Yura on 27.02.2017.

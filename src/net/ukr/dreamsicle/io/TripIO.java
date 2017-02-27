@@ -12,8 +12,8 @@ import static net.ukr.dreamsicle.io.Validator.isLocalDate;
 /**
  * Created by Yura on 27.02.2017.
  */
-public class TripIOUtils {
-    private TripIOUtils() {}
+public class TripIO {
+    private TripIO() {}
 
     public static final String CSV_DELIMITER = ";";
 
@@ -111,15 +111,12 @@ public class TripIOUtils {
         if (tokens.length < 3) {
             throw new IllegalFormatException("Missing values, should be (city; transport: date: tariff): " + line);
         }
-        if (!isDouble(tokens[1])) {
-            throw new IllegalFormatException("Release year in not a number: " + tokens[1]);
-        }
 
         String city = tokens[0].trim();
         String transport = tokens[0].trim();
         int localDate = Integer.parseInt(tokens[1].trim());
         if (!isLocalDate(localDate)) {
-            throw new IllegalFormatException("Illegal release year: " + localDate);
+            throw new IllegalFormatException("Illegal date: " + localDate);
         }
         String tariff = tokens[0].trim();
 
