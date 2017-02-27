@@ -109,7 +109,7 @@ public class TripIOUtils {
         String[] tokens = line.split(CSV_DELIMITER);
 
         if (tokens.length < 3) {
-            throw new IllegalFormatException("Missing values, should be (name;release-year;genres): " + line);
+            throw new IllegalFormatException("Missing values, should be (city; transport: date: tariff): " + line);
         }
         if (!isInt(tokens[1])) {
             throw new IllegalFormatException("Release year in not a number: " + tokens[1]);
@@ -121,9 +121,10 @@ public class TripIOUtils {
         if (!isLocalDate(localDate)) {
             throw new IllegalFormatException("Illegal release year: " + localDate);
         }
+        String tariff = tokens[0].trim();
 
 
 
-        return new Trip(city, transport,localDate);
+        return new Trip(city, transport,localDate, tariff);
     }
 }

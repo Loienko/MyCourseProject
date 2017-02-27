@@ -17,7 +17,7 @@ import java.util.List;
 import static java.util.Collections.reverseOrder;
 import static net.ukr.dreamsicle.filtering.TripPredicates.filterDate;
 import static net.ukr.dreamsicle.filtering.TripPredicates.filterPrice;
-import static net.ukr.dreamsicle.filtering.onePredicate.allOf;
+import static net.ukr.dreamsicle.filtering.Predicates.allOf;
 import static net.ukr.dreamsicle.sorting.CommonComparators.multiCriterion;
 import static net.ukr.dreamsicle.sorting.TripComparators.byDate;
 import static net.ukr.dreamsicle.sorting.TripComparators.byPrice;
@@ -45,7 +45,7 @@ public class MyTripsRunner {
         System.out.println("all trips \n"+trips);
 
         writeTripsIntoBinFile(trips, OUTPUT_BIN_FILE);
-        System.out.println("Свынтус дурб!!");
+
 
     }
 
@@ -70,25 +70,5 @@ public class MyTripsRunner {
             System.out.println("IO Error. " + e.getMessage());
         }
     }
-
-
-
-
-
-    private static Trips createTrips() {
-        Trips trips = new Trips();
-        trips. addTrip(new Trip("London", Transport.BUS, 12.05,new EconomyTrip()));
-        trips .addTrip(new Trip("Paris",Transport.CAR, 11.05, new LuxeTrip()));
-        trips .addTrip(new Trip("Mexico",Transport.PLANE, 25.05, new StandartTrip()));
-        trips .addTrip(new Trip("Kiev",Transport.WALKER,2.05,new EconomyTrip()));
-        trips .addTrip(new Trip("Praha", Transport.BUS,8.05, new StandartTrip()));
-        trips .addTrip(new Trip("Sidney",Transport.PLANE,29.05, new FamilyTrip()));
-        trips .addTrip(new Trip("Los Angeles",Transport.PLANE,5.05, new LuxeTrip()));
-        trips .addTrip(new Trip("Ottava",Transport.PLANE,14.05,new StandartTrip()));
-        trips .addTrip(new Trip("London", Transport.PLANE, 12.05,new LuxeTrip()));
-        return trips;
-    }
-
-
 
 }
