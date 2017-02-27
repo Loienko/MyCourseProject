@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static net.ukr.dreamsicle.io.Validator.isInt;
+import static net.ukr.dreamsicle.io.Validator.isDouble;
 import static net.ukr.dreamsicle.io.Validator.isLocalDate;
 
 /**
@@ -111,7 +111,7 @@ public class TripIOUtils {
         if (tokens.length < 3) {
             throw new IllegalFormatException("Missing values, should be (city; transport: date: tariff): " + line);
         }
-        if (!isInt(tokens[1])) {
+        if (!isDouble(tokens[1])) {
             throw new IllegalFormatException("Release year in not a number: " + tokens[1]);
         }
 

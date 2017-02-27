@@ -10,9 +10,9 @@ public class Validator {
         return date >= 1 && date <= 31;
     }
 
-    public static boolean isInt(String s) {
+    public static boolean isDouble(String s) {
         try {
-            Integer.parseInt(s);
+            Double.parseDouble(s);
             return true;
         } catch (NumberFormatException e) {
             return false;
