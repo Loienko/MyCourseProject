@@ -36,7 +36,7 @@ public class MyTripsRunner {
         System.out.println("Prices for all trips: "+trips.getPrice(Trip::getPrice));
 
         trips.sort(multiCriterion(reverseOrder(byDate()), byPrice()));
-        trips = trips.filter(trips, allOf(filterPrice(1500), filterDate(13.05,25.05)));
+        trips = trips.filter(trips, allOf(filterPrice(1500), filterDate(13.05, 25.05)));
         System.out.println("all trips \n"+trips);
 
         writeTripsIntoBinFile(trips, OUTPUT_BIN_FILE);
@@ -49,11 +49,11 @@ public class MyTripsRunner {
             return TripIOUtils.readTripsFromFile(fileName);
         } catch (IOException e) {
             System.out.println("IO Error. " + e.getMessage());
-            System.exit(0);
+            //System.exit(0);
             return null;
         } catch (IllegalFormatException e) {
             System.out.println("Illegal format. " + e.getMessage());
-            System.exit(0);
+           // System.exit(0);
             return null;
         }
     }
