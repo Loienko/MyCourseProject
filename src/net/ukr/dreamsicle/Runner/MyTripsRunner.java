@@ -33,12 +33,10 @@ public class MyTripsRunner {
 
     public static void main(String[] args) {
 
-        List<Trip> trip = readTripsFromFile(INPUT_TEXT_FILE);
+        List<Trip> trips = readTripsFromFile(INPUT_TEXT_FILE);
 
         User user = new User("Yura", "Loienko","dreamsicle@ukr.net",666249373);
         System.out.println(user.toString());//+user.myOldTrips());
-
-        Trips trips = createTrips();
 
         System.out.println("Prices for all trips: "+trips.getPrice(Trip::getPrice));
 
@@ -47,7 +45,7 @@ public class MyTripsRunner {
         System.out.println("all trips \n"+trips);
 
         writeTripsIntoBinFile(trips, OUTPUT_BIN_FILE);
-
+        System.out.println("Свынтус дурб!!");
 
     }
 
