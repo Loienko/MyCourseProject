@@ -1,6 +1,8 @@
 package net.ukr.dreamsicle.Runner;
 
 
+import net.ukr.dreamsicle.io.IllegalFormatException;
+import net.ukr.dreamsicle.io.TripIOUtils;
 import net.ukr.dreamsicle.tariff.EconomyTrip;
 import net.ukr.dreamsicle.tariff.FamilyTrip;
 import net.ukr.dreamsicle.tariff.LuxeTrip;
@@ -49,12 +51,9 @@ public class MyTripsRunner {
 
     }
 
-    private static void writeTripsIntoBinFile(Trips trips, String outputBinFile) {
-    }
-
-    private static List<Trip> readTripsFromFile(String inputTextFile) {
+    private static List<Trip> readTripsFromFile(String fileName) {
         try {
-            return TripIOUtils.readFilmsFromFile(inputTextFile);
+            return TripIOUtils.readTripsFromFile(fileName);
         } catch (IOException e) {
             System.out.println("IO Error. " + e.getMessage());
             System.exit(0);
@@ -65,6 +64,15 @@ public class MyTripsRunner {
             return null;
         }
     }
+
+    private static void writeTripsIntoBinFile(List<Trip> trips, String fileName) {
+        try {
+            TripIOUtils.writeTripsIntoBinFile(fileName, trips);
+        } catch (IOException e) {
+            System.out.println("IO Error. " + e.getMessage());
+        }
+    }
+
 
 
 
