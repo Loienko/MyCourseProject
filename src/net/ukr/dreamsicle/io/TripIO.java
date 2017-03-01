@@ -1,12 +1,14 @@
 package net.ukr.dreamsicle.io;
 
+import net.ukr.dreamsicle.tariff.Tariff;
+import net.ukr.dreamsicle.trip.Transport;
 import net.ukr.dreamsicle.trip.Trip;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static net.ukr.dreamsicle.io.Validator.isDouble;
+
 import static net.ukr.dreamsicle.io.Validator.isLocalDate;
 
 /**
@@ -108,20 +110,20 @@ public class TripIO {
     public static Trip parseTrip(String line) {
         String[] tokens = line.split(CSV_DELIMITER);
 
-        if (tokens.length < 3) {
+        if (tokens.length < 4) {
             throw new IllegalFormatException("Missing values, should be (city; transport: date: tariff): " + line);
         }
 
         String city = tokens[0].trim();
-        String transport = tokens[0].trim();
-        int localDate = Integer.parseInt(tokens[1].trim());
+        //String transport = tokens[0].trim();
+        double localDate = Double.parseDouble(tokens[1].trim());
         if (!isLocalDate(localDate)) {
             throw new IllegalFormatException("Illegal date: " + localDate);
         }
-        String tariff = tokens[0].trim();
+        //String tariff = tokens[0].trim();
 
 
 
-        return new Trip(city, transport,localDate, tariff);
+        return new Trip(city, transport ,localDate, tariff);
     }
 }

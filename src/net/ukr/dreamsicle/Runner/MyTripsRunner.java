@@ -9,6 +9,7 @@ import net.ukr.dreamsicle.trip.Trip;
 import java.io.IOException;
 import java.util.List;
 
+import static java.lang.System.exit;
 import static java.util.Collections.reverseOrder;
 import static net.ukr.dreamsicle.filtering.TripPredicates.filterDate;
 import static net.ukr.dreamsicle.filtering.TripPredicates.filterPrice;
@@ -31,7 +32,7 @@ public class MyTripsRunner {
         List<Trip> trips = readTripsFromFile(INPUT_TEXT_FILE);
 
         User user = new User("Yura", "Loienko","dreamsicle@ukr.net",666249373);
-        System.out.println(user.toString());//+user.myOldTrips());
+        System.out.println(user.toString());  //+user.myOldTrips());
 
         System.out.println("Prices for all trips: "+trips.getPrice(Trip::getPrice));
 
@@ -49,11 +50,11 @@ public class MyTripsRunner {
             return TripIO.readTripsFromFile(fileName);
         } catch (IOException e) {
             System.out.println("IO Error. " + e.getMessage());
-            //System.exit(0);
+            exit(0);
             return null;
         } catch (IllegalFormatException e) {
             System.out.println("Illegal format. " + e.getMessage());
-           // System.exit(0);
+           exit(0);
             return null;
         }
     }
