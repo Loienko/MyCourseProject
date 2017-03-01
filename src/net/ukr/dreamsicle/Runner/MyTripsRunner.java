@@ -33,7 +33,7 @@ public class MyTripsRunner {
         List<Trip> trips = readTripsFromFile(INPUT_TEXT_FILE);
 
         User user = new User("Yura", "Loienko","dreamsicle@ukr.net",666249373);
-        System.out.println(user.toString());  //+user.myOldTrips());
+        System.out.println(user.toString()+user.myOldTrips());
 
         System.out.println("Prices for all trips: "+trips.getPrice(Trip::getPrice));
 

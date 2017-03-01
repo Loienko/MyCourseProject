@@ -1,8 +1,5 @@
 package net.ukr.dreamsicle.Runner;
 
-import net.ukr.dreamsicle.trip.Trip;
-import net.ukr.dreamsicle.trip.Trips;
-
 /**
  * Created by Yura on 13.02.2017.
  */
@@ -47,10 +44,8 @@ public class User {
                 ']';
     }
 
-    public void myOldTrips(Trips trips) {
-        for (Trip trip : trips) {
-            System.out.println(trip);
-        }
+    public String myOldTrips() {
+        return null;
     }
 }
 
