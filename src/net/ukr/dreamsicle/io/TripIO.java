@@ -8,13 +8,13 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import static net.ukr.dreamsicle.io.Validator.isLocalDate;
 
 /**
  * Created by Yura on 27.02.2017.
  */
 public class TripIO {
+
     private TripIO() {}
 
     public static final String CSV_DELIMITER = ";";
@@ -115,15 +115,37 @@ public class TripIO {
         }
 
         String city = tokens[0].trim();
-        //String transport = tokens[0].trim();
+
+        ArrayList<Transport> transport = parseTransport(tokens[2]);
+        if (transport == null) {
+            return null;
+        }
+
         double localDate = Double.parseDouble(tokens[1].trim());
         if (!isLocalDate(localDate)) {
             throw new IllegalFormatException("Illegal date: " + localDate);
         }
-        //String tariff = tokens[0].trim();
+        String tariff = tokens[0].trim();
 
 
 
-        return new Trip(city, transport ,localDate, tariff);
+        return new Trip(city, transport ,localDate, Tariff.tariff);
+    }
+
+    public static ArrayList<Transport> parseTransport(String line) {
+        final ArrayList<Transport> transports = new ArrayList<>();
+
+        String[] transportTokens = line.split(",");
+        for (String transportToken : transportTokens) {
+            transportToken = transportToken.trim();
+
+            if (!Transport.isTransport(transportToken)) {
+                throw new IllegalFormatException("Illegal genre: " + transportToken);
+            }
+
+            transports.add(Transport.valueOf(transportToken));
+        }
+
+        return transports;
     }
 }
