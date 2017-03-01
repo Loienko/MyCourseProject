@@ -125,11 +125,11 @@ public class TripIO {
         if (!isLocalDate(localDate)) {
             throw new IllegalFormatException("Illegal date: " + localDate);
         }
-        String tariff = tokens[0].trim();
+        tariff ;//?????????????
 
 
 
-        return new Trip(city, transport ,localDate, Tariff.tariff);
+        return new Trip(city, transport ,localDate, tariff);
     }
 
     public static ArrayList<Transport> parseTransport(String line) {
@@ -148,4 +148,5 @@ public class TripIO {
 
         return transports;
     }
+
 }

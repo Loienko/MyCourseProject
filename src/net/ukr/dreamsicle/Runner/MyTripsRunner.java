@@ -4,6 +4,7 @@ package net.ukr.dreamsicle.Runner;
 import net.ukr.dreamsicle.io.IllegalFormatException;
 import net.ukr.dreamsicle.io.TripIO;
 import net.ukr.dreamsicle.trip.Trip;
+import org.jetbrains.annotations.Nullable;
 
 
 import java.io.IOException;
@@ -45,6 +46,7 @@ public class MyTripsRunner {
 
     }
 
+    @Nullable
     private static List<Trip> readTripsFromFile(String fileName) {
         try {
             return TripIO.readTripsFromFile(fileName);
