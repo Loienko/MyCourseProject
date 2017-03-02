@@ -1,7 +1,7 @@
 package net.ukr.dreamsicle.trip;
 
 import net.ukr.dreamsicle.joiner.Joiner;
-import net.ukr.dreamsicle.tariff.Tariff;
+import net.ukr.dreamsicle.tariff.TariffEnum;
 
 import java.io.Serializable;
 
@@ -15,13 +15,13 @@ public class Trip implements Serializable, Entity {
     private final String city;
     private Transport transport;
     private final double localDate;
-    private final Tariff tariff;
+    private final TariffEnum tariffEnum;
 
-    public Trip(String city, Transport transport, double localDate, Tariff tariff) {
+    public Trip(String city, Transport transport, double localDate, TariffEnum tariffEnum) {
         this.city = city;
         this.transport = transport;
         this.localDate = localDate;
-        this.tariff = tariff;
+        this.tariffEnum = tariffEnum;
     }
 
     public String getCity() {
@@ -36,12 +36,12 @@ public class Trip implements Serializable, Entity {
         return localDate;
     }
 
-    public Tariff getTariff() {
-        return tariff;
+    public TariffEnum getTariffEnum() {
+        return tariffEnum;
     }
 
     public long getPrice(){
-        return tariff.calculatePrice(this);
+        return tariffEnum.compareTo (TariffEnum.ECONOMYTARIFF);
     }
 
     @Override
@@ -53,7 +53,7 @@ public class Trip implements Serializable, Entity {
     }
 
     public String toOutputString(String delimiter) {
-        return new Joiner(delimiter).join(city, transport ,localDate, tariff);
+        return new Joiner(delimiter).join(city, transport ,localDate, tariffEnum);
     }
 
     @Override
@@ -65,8 +65,8 @@ public class Trip implements Serializable, Entity {
 
         if (Double.compare(trip.localDate, localDate) != 0) return false;
         if (city != null ? !city.equals(trip.city) : trip.city != null) return false;
-        if (transport != null ? !transport.equals(trip.transport) : trip.transport != null) return false;
-        return tariff != null ? tariff.equals(trip.tariff) : trip.tariff == null;
+        if (transport != trip.transport) return false;
+        return tariffEnum == trip.tariffEnum;
     }
 
     @Override
@@ -77,7 +77,7 @@ public class Trip implements Serializable, Entity {
         result = 31 * result + (transport != null ? transport.hashCode() : 0);
         temp = Double.doubleToLongBits(localDate);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (tariff != null ? tariff.hashCode() : 0);
+        result = 31 * result + (tariffEnum != null ? tariffEnum.hashCode() : 0);
         return result;
     }
 }

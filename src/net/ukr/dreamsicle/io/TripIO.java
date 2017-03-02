@@ -1,6 +1,6 @@
 package net.ukr.dreamsicle.io;
 
-import net.ukr.dreamsicle.tariff.Tariff;
+import net.ukr.dreamsicle.tariff.TariffEnum;
 import net.ukr.dreamsicle.trip.Transport;
 import net.ukr.dreamsicle.trip.Trip;
 
@@ -111,7 +111,7 @@ public class TripIO {
         String[] tokens = line.split(CSV_DELIMITER);
 
         if (tokens.length < 4) {
-            throw new IllegalFormatException("Missing values, should be (city; transport: date: tariff): " + line);
+            throw new IllegalFormatException("Missing values, should be (city; transport: date: tariffEnum): " + line);
         }
 
         String city = tokens[0].trim();
@@ -125,12 +125,33 @@ public class TripIO {
         if (!isLocalDate(localDate)) {
             throw new IllegalFormatException("Illegal date: " + localDate);
         }
-        tariff ;//?????????????
+
+        ArrayList<TariffEnum> tariffEnum = parseTariffEnum(tokens[2]);
+        if (tariffEnum == null) {
+            return null;
+        }
 
 
 
-        return new Trip(city, transport ,localDate, tariff);
+        return new Trip(city, transport ,localDate, tariffEnum);
     }
+
+    private static ArrayList<TariffEnum> parseTariffEnum(String line) {
+        final ArrayList<TariffEnum> tariffEnums = new ArrayList<>();
+
+        String[] tariffEnumTokens = line.split(",");
+        for (String tariffEnumToken : tariffEnumTokens) {
+            tariffEnumToken = tariffEnumToken.trim();
+
+            if (!TariffEnum.isTariffEnum(String.valueOf(tariffEnumTokens))) {
+                throw new IllegalFormatException("Illegal tariff: "+tariffEnumToken);
+            }
+            tariffEnums.add(TariffEnum.valueOf(tariffEnumToken));
+        }
+        return tariffEnums;
+
+    }
+
 
     public static ArrayList<Transport> parseTransport(String line) {
         final ArrayList<Transport> transports = new ArrayList<>();
@@ -140,7 +161,7 @@ public class TripIO {
             transportToken = transportToken.trim();
 
             if (!Transport.isTransport(transportToken)) {
-                throw new IllegalFormatException("Illegal genre: " + transportToken);
+                throw new IllegalFormatException("Illegal transport: " + transportToken);
             }
 
             transports.add(Transport.valueOf(transportToken));

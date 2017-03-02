@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="675d0e3d-83ce-4c2b-8230-a5f57ed3f684" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/TariffEnum.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/filtering/TripPredicates.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/sorting/TripComparators.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/tariff/EconomyTrip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/tariff/FamilyTrip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/tariff/StandartTrip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/trip/Transport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyCourseProject/net/ukr/dreamsicle/trip/Trips.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/MyTripsRunner.java" afterPath="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/MyTripsRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java" afterPath="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/trips.csv" afterPath="$PROJECT_DIR$/files/trips.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java" afterPath="$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java" afterPath="$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java" />
     </list>
     <list id="0b38fdd0-94ba-4b4b-8d1d-07a56d6f61f6" name="New changelist" comment=")))" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyTripsRunner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyTripsRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/MyTripsRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+            <state relative-caret-position="185">
+              <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="method#readTripsFromFile#0;class#MyTripsRunner#0" expanded="false" />
                 <element signature="method#writeTripsIntoBinFile#0;class#MyTripsRunner#0" expanded="false" />
@@ -45,14 +54,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java">
+      <file leaf-file-name="EconomyTrip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/EconomyTrip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tariff.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/Tariff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TariffEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/TariffEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
-                <element signature="method#User#0;class#User#0" expanded="false" />
-                <element signature="method#toString#0;class#User#0" expanded="false" />
+                <element signature="docComment;class#TariffEnum#0" expanded="false" />
+                <element signature="class#177:277" expanded="false" />
+                <element signature="class#315:411" expanded="false" />
+                <element signature="class#445:541" expanded="false" />
+                <element signature="class#583:679" expanded="false" />
+                <element signature="method#isTariffEnum#0;class#TariffEnum#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Trip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Trip#0" expanded="false" />
+                <element signature="method#Trip#0;class#Trip#0" expanded="false" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="method#toString#0;class#Trip#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,36 +111,13 @@
       <file leaf-file-name="TripIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+            <state relative-caret-position="322">
+              <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tariff.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/Tariff.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Trip.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-              <folding>
-                <element signature="docComment;class#Trip#0" expanded="false" />
-                <element signature="method#Trip#0;class#Trip#0" expanded="false" />
-                <element signature="method#toString#0;class#Trip#0" expanded="false" />
-                <element signature="method#equals#0;class#Trip#0" expanded="false" />
-                <element signature="method#hashCode#0;class#Trip#0" expanded="false" />
+                <element signature="docComment;method#readTripsFromBinFile#0;class#TripIO#0" expanded="false" />
+                <element signature="method#parseTariffEnum#0;class#TripIO#0" expanded="false" />
+                <element signature="method#parseTransport#0;class#TripIO#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -99,8 +126,8 @@
       <file leaf-file-name="Transport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Transport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="385">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -111,9 +138,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -138,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/ioUtils/parser/IntParser.java" />
-        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/ioUtils/ObjectReader.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/ioUtils/ObjectWriter.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/BasicFilmsIO.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/io/FilmStringConverter.java" />
@@ -183,12 +208,14 @@
         <option value="$PROJECT_DIR$/trips" />
         <option value="$PROJECT_DIR$/trips.csv" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/TripIORunner.java" />
-        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Transport.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/Tariff.java" />
-        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/MyTripsRunner.java" />
         <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java" />
+        <option value="$PROJECT_DIR$/files/trips.csv" />
+        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/TariffEnum.java" />
+        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java" />
+        <option value="$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java" />
       </list>
     </option>
   </component>
@@ -250,6 +277,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="trip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyCourseProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyCourseProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dreamsicle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tariff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -831,7 +880,7 @@
       <workItem from="1488222275527" duration="201000" />
       <workItem from="1488222567527" duration="635000" />
       <workItem from="1488223378805" duration="6539000" />
-      <workItem from="1488357707908" duration="7443000" />
+      <workItem from="1488357707908" duration="11413000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1488224545654</created>
@@ -924,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488399436735</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=")">
+      <created>1488399834950</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1488399834950</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139265000" />
+    <option name="totallyTimeSpent" value="143235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -946,7 +1002,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.101472996" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0801964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -958,7 +1014,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15658094" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22239032" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13420622" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1020,7 +1076,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1029,20 +1085,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/LuxeTrip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/StandartTrip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java" />
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/filtering/CommonPredicates.java" />
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/filtering/Filter.java" />
@@ -1268,14 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/trips.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/TripIORunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1326,64 +1360,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Transport.java">
+    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="393">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="method#User#0;class#User#0" expanded="false" />
+            <element signature="method#toString#0;class#User#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java">
+    <entry file="file://$PROJECT_DIR$/files/trips.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-          <folding>
-            <element signature="docComment;class#Trip#0" expanded="false" />
-            <element signature="method#Trip#0;class#Trip#0" expanded="false" />
-            <element signature="method#toString#0;class#Trip#0" expanded="false" />
-            <element signature="method#equals#0;class#Trip#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Trip#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/Tariff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/EconomyTrip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Transport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/tariff/TariffEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;class#TariffEnum#0" expanded="false" />
+            <element signature="class#177:277" expanded="false" />
+            <element signature="class#315:411" expanded="false" />
+            <element signature="class#445:541" expanded="false" />
+            <element signature="class#583:679" expanded="false" />
+            <element signature="method#isTariffEnum#0;class#TariffEnum#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/trip/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Trip#0" expanded="false" />
+            <element signature="method#Trip#0;class#Trip#0" expanded="false" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="method#toString#0;class#Trip#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/io/TripIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+        <state relative-caret-position="322">
+          <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#readTripsFromBinFile#0;class#TripIO#0" expanded="false" />
+            <element signature="method#parseTariffEnum#0;class#TripIO#0" expanded="false" />
+            <element signature="method#parseTransport#0;class#TripIO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/MyTripsRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="185">
+          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="method#readTripsFromFile#0;class#MyTripsRunner#0" expanded="false" />
             <element signature="method#writeTripsIntoBinFile#0;class#MyTripsRunner#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/ukr/dreamsicle/Runner/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="method#User#0;class#User#0" expanded="false" />
-            <element signature="method#toString#0;class#User#0" expanded="false" />
           </folding>
         </state>
       </provider>

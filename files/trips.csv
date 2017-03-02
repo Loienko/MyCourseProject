@@ -1,9 +1,9 @@
-London;         Transport.BUS;      12.05;  new EconomyTrip;
-Paris;          Transport.CAR;      11.05;  new LuxeTrip;
-Mexico;         Transport.PLANE;    25.05;  new StandartTrip;
-Kiev;           Transport.WALKER;   2.05;   new EconomyTrip;
-Praha;          Transport.BUS;      8.05;   new StandartTrip;
-Sidney;         Transport.PLANE;    29.05;  new FamilyTrip;
-Los Angeles;    Transport.PLANE;    5.05;   new LuxeTrip;
-Ottawa;         Transport.PLANE;    14.05;  new StandartTrip;
-London;         Transport.PLANE;    12.05;  new LuxeTrip;
+London;         BUS;      12.05;  ECONOMYTARIFF;
+Paris;          CAR;      11.05;  LUXETARIFF;
+Mexico;         PLANE;    25.05;  STANDARTTARIFF;
+Kiev;           WALKER;   2.05;   ECONOMYTARIFF;
+Praha;          BUS;      8.05;   FAMILYTARIFF;
+Sidney;         PLANE;    29.05;  FAMILYTARIFF;
+Los Angeles;    PLANE;    5.05;   LUXETARIFF;
+Ottawa;         PLANE;    14.05;  STANDARTTARIFF;
+London;         PLANE;    12.05;  LUXETARIFF;
