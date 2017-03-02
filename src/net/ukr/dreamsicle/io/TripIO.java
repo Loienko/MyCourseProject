@@ -6,7 +6,9 @@ import net.ukr.dreamsicle.trip.Trip;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static net.ukr.dreamsicle.io.Validator.isLocalDate;
 
@@ -116,8 +118,8 @@ public class TripIO {
 
         String city = tokens[0].trim();
 
-        ArrayList<Transport> transport = parseTransport(tokens[2]);
-        if (transport == null) {
+        Set<Transport> transports = parseTransport(tokens[2]);
+        if (transports == null) {
             return null;
         }
 
@@ -126,18 +128,18 @@ public class TripIO {
             throw new IllegalFormatException("Illegal date: " + localDate);
         }
 
-        ArrayList<TariffEnum> tariffEnum = parseTariffEnum(tokens[2]);
-        if (tariffEnum == null) {
+        Set<TariffEnum> tariffEnums = parseTariffEnum(tokens[2]);
+        if (tariffEnums == null) {
             return null;
         }
 
 
 
-        return new Trip(city, transport ,localDate, tariffEnum);
+        return new Trip(city, transports ,localDate, tariffEnums);
     }
 
-    private static ArrayList<TariffEnum> parseTariffEnum(String line) {
-        final ArrayList<TariffEnum> tariffEnums = new ArrayList<>();
+    private static Set<TariffEnum> parseTariffEnum(String line) {
+        final Set<TariffEnum> tariffEnums = new HashSet<>();
 
         String[] tariffEnumTokens = line.split(",");
         for (String tariffEnumToken : tariffEnumTokens) {
@@ -153,8 +155,8 @@ public class TripIO {
     }
 
 
-    public static ArrayList<Transport> parseTransport(String line) {
-        final ArrayList<Transport> transports = new ArrayList<>();
+    public static Set<Transport> parseTransport(String line) {
+        final Set<Transport> transports = new HashSet<>();
 
         String[] transportTokens = line.split(",");
         for (String transportToken : transportTokens) {
